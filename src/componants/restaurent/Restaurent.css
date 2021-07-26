@@ -1,0 +1,57 @@
+.restaurentCardSection {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+}
+.card {
+    min-height: 495px;
+}
+
+.imgBlock {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: #ccc;
+}
+.imgBlock img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.foodTag {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.navigation {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+.navigationMenu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigationMenu li {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    padding: 0.8rem 1.3rem;
+    min-width: 80px;
+    text-align: center;
+    transition: all 0.3s ease-in;
+}
+.navigationMenu li:hover {
+    background-color: #e6e6e6;
+}
+.navigationMenu li.active {
+    background-color: var(--bs-blue);
+    color: white;
+    font-weight: 700;
+}
