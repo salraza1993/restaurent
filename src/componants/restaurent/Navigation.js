@@ -1,16 +1,15 @@
 import React from 'react';
 
-const Navigation = () => {
+const Navigation = ({ menuList, filterItems }) => {
     return (
         <nav className="navigation mb-5 d-flex justify-content-center align-itmes-center">
-            <ul className="navigationMenu d-flex justify-content-center">
-                <li className="active">All</li>
-                <li>Breakfast</li>
-                <li>Lunch</li>
-                <li>Evening Breakfast</li>
-                <li>Dinner</li>
-                <li>Meal</li>
-            </ul>
+            <div className="navigationMenu d-flex justify-content-center">
+                {
+                    menuList.map((currentList, index) => {
+                        return <button type="button" onClick={ () => filterItems( currentList ) } key={ index }> { currentList } </button>
+                    })
+                }
+            </div>
         </nav>
     );
 }

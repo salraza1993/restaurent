@@ -5,7 +5,7 @@
     background-color: #fff;
 }
 .card {
-    min-height: 495px;
+    min-height: 500px;
 }
 
 .imgBlock {
@@ -35,22 +35,24 @@
     padding: 0;
     list-style: none;
 }
-.navigationMenu li {
+.navigationMenu button {
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 1px;
     font-family: "Montserrat", sans-serif;
     cursor: pointer;
-    padding: 0.8rem 1.3rem;
+    padding: 0.6rem 1.3rem;
     min-width: 80px;
     text-align: center;
     transition: all 0.3s ease-in;
+    border: 0;
+    background-color: transparent;
 }
-.navigationMenu li:hover {
+.navigationMenu button:hover {
     background-color: #e6e6e6;
 }
-.navigationMenu li.active {
+.navigationMenu button.active {
     background-color: var(--bs-blue);
     color: white;
     font-weight: 700;
